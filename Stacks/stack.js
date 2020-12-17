@@ -1,8 +1,8 @@
 class Stack
 {
-    #count
-    #storage
-    #limit
+    #count;
+    #storage;
+    #limit;
     constructor(limit=10)
     {
         this.#count=0;
@@ -54,5 +54,9 @@ class Stack
             return peekItem;
         }
         else return null;
+    }
+    show()
+    {
+        console.log(this.#storage);
     }
 };
